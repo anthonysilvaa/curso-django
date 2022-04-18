@@ -25,8 +25,8 @@ jobs:
           pip install -q pipenv codecov
           pipenv sync --dev
 
-      - name: Test with pytest and coverage
-        run: pipenv run pytest --cov=curso-django
+      #- name: Test with pytest and coverage
+       # run: pipenv run pytest --cov=curso-django
 
       - name: Rodar Flake8
         run: pipenv run flake8

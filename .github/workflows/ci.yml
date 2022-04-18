@@ -33,8 +33,8 @@ jobs:
       - name: Rodar Flake8
         run: pipenv run flake8
 
-      - name: Run tests and collect coverage
-        run: |
-          coverage xml
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
+      - name: "Upload coverage to Codecov"
+        uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: false
+          token: ${{ CODECOV_TOKEN='267b8dc4-9196-4e0b-a809-bdb8d224f6c1' }} # not required for public repos

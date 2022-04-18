@@ -38,3 +38,11 @@ jobs:
         with:
           fail_ci_if_error: true
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+
+      version: 2
+      updates:
+      - package-ecosystem: pip
+        directory: "/"
+        schedule:
+          interval: daily
+        open-pull-requests-limit: 10

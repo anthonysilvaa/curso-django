@@ -3,10 +3,11 @@ name: Python application
 on:
   push:
     branches:
-      - main
+      - master
+      - trabalho_continuo
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -25,12 +26,14 @@ jobs:
           pip install -q pipenv codecov
           pipenv sync --dev
 
+
       - name: Test with pytest and coverage
-        run: pipenv run pytest --cov=curso-django
+        run: pipenv run pytest --cov=libpythonpro
 
       - name: Rodar Flake8
         run: pipenv run flake8
 
-
-
-
+      - name: "Upload coverage to Codecov"
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos

@@ -7,4 +7,3 @@ Link do curso [Curso Django]('https://google.com.br')
 
 [![Updates](https://pyup.io/repos/github/anthonysilvaa/curso-django/shield.svg)](https://pyup.io/repos/github/anthonysilvaa/curso-django/)
 [![Python 3](https://pyup.io/repos/github/anthonysilvaa/curso-django/python-3-shield.svg)](https://pyup.io/repos/github/anthonysilvaa/curso-django/)
-[![codecov](https://codecov.io/gh/Hysing-Fundation/libpythonpro/branch/trabalho_continuo/graph/badge.svg?token=HXJ98D6FIE)](https://codecov.io/gh/Hysing-Fundation/libpythonpro)

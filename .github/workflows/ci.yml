@@ -3,11 +3,11 @@ name: Python application
 on:
   push:
     branches:
-      - master
-      - trabalho_continuo
+      - main
+
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:

@@ -31,7 +31,6 @@ jobs:
       - name: Rodar Flake8
         run: pipenv run flake8
 
-      - name: CodeCov
-      - uses: codecov/codecov-action@v2
+
 
 

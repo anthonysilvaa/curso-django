@@ -34,7 +34,7 @@ jobs:
         run: pipenv run flake8
 
       - name: Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v2cd Desk
         with:
           file: .coverage
           token: d3bcb8c4-6f8f-4e06-8f25-d58b7c7fb334

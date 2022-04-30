@@ -3,7 +3,7 @@ name: Python application
 on:
   push:
     branches:
-      - main
+      - trabanhando
 
   pull_request:
     branches:
@@ -25,6 +25,7 @@ jobs:
         run: |
           pip install -q pipenv codecov
           pipenv sync --dev
+          cp contrib/env-sample .env
           
 
       - name: Test with pytest and coverage

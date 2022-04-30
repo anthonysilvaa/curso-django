@@ -38,3 +38,11 @@ jobs:
         with:
           file: .coverage
           token: d3bcb8c4-6f8f-4e06-8f25-d58b7c7fb334
+
+      services:
+        postgresql
+      addons:
+        postgresql: '9,5'
+
+      before_script:
+        - pslq -c "CREATE DATABASE testdb" -U postgres

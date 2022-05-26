@@ -4,6 +4,7 @@ from django.urls import reverse
 # Create your views here.
 # Contexto do template
 
+
 class Video:
 
     def __init__(self, slug, titulo, vimeo_id):
@@ -13,7 +14,6 @@ class Video:
 
     def get_absolute_url(self):
         return reverse(('aperitivos:video'), args=(self.slug,))
-
 
 
 videos = [

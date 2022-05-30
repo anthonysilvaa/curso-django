@@ -15,6 +15,7 @@ collectfast = "*"
 python-decouple = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
+shell = "*"
 
 [dev-packages]
 flake8 = "*"

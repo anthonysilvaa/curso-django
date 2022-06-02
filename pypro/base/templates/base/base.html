@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}Python Pro{% endblock title %}</title>
+    <title>{% block title %}Anthony Silva{% endblock title %}</title>
 
     <meta name="description" content="{% block description %}Página do curso Python Pro{% endblock description %}">
     <meta name="author" content="Anthony Silva">
@@ -23,7 +23,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
+        <a class="navbar-brand" href="{% url 'base:home' %}">Anthony Silva</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         {% for modulo in MODULOS %}
-                        <a class="dropdown-item" href="#">{{modulo.titulo}}</a>
+                        <a class="dropdown-item" href="{{modulo.get_absolute_url}}">{{modulo.titulo}}</a>
                         <div class="dropdown-divider"></div>
                         {% endfor %}
                     </div>

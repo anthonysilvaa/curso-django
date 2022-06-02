@@ -16,6 +16,7 @@ python-decouple = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 shell = "*"
+django-ordered-model = "*"
 
 [dev-packages]
 flake8 = "*"
